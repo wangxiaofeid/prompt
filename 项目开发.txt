@@ -1,0 +1,41 @@
+开发一个基于设计稿的Web应用，使用Vue3 + TypeScript技术栈。项目应遵循现代Web开发最佳实践，确保代码的可维护性和可扩展性。 
+## 技术栈 
+Vue 3 - TypeScript
+Vue Router - Pinia（状态管理）
+Vite（构建工具）
+ESLint + Prettier（代码规范）
+Tailwind CSS
+## 开发要求 
+1. 项目结构 
+src/ 
+├── assets/ # 静态资源 
+├── components/ # 通用组件 
+├── composables/ # 组合式API 
+├── layouts/ # 页面布局 
+├── pages/ # 页面组件 
+├── router/ # 路由配置 
+├── services/ # API服务 
+├── stores/ # 状态管理 
+├── types/ # TypeScript类型定义 
+├── utils/ # 工具函数 
+├── App.vue # 根组件 
+    └── main.ts # 入口文件 
+2. 组件开发 
+使用Composition API + `<script setup>`语法 
+组件命名采用PascalCase 
+使用TypeScript定义props和emits 
+遵循单一职责原则
+3. 状态管理 
+使用Pinia进行状态管理 
+将业务逻辑封装在store中 
+避免直接修改state，使用actions 
+4. API调用 
+使用axios进行HTTP请求 
+将API请求封装在services目录 
+使用TypeScript定义请求/响应类型 
+5. 样式 - 根据设计稿选择合适的CSS方案 
+推荐使用CSS Modules或Scoped Styles 
+如需使用UI库，推荐Element Plus 
+6. 代码质量 - 配置ESLint + Prettier 
+添加必要的单元测试 
+使用Git进行版本控制，遵循Git Flow 
